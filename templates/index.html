@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Fraud Detection</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 650px;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            color: #5b2c83;
+            font-size: 30px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        .upload-box {
+            border: 2px dashed #8e44ad;
+            border-radius: 15px;
+            padding: 20px;
+            background: #f8f1ff;
+        }
+
+        input[type="file"] {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            background: white;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 28px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(90deg, #8e44ad, #3498db);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: scale(1.03);
+        }
+
+        .info {
+            margin-top: 18px;
+            color: #555;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🤖 AI Resume Fraud Detection</h1>
+
+        <div class="subtitle">
+            Detect suspicious resume patterns using AI-based analysis
+        </div>
+
+        <div class="upload-box">
+
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+
+                <input type="file"
+                       name="resume"
+                       accept=".pdf,.doc,.docx"
+                       required>
+
+                <br>
+
+                <button type="submit">
+                    🔍 Upload & Analyze Resume
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="info">
+            📄 Supported: PDF, DOC, DOCX
+        </div>
+
+    </div>
+
+</body>
+</html>
